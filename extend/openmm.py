@@ -21,18 +21,18 @@ import IPython as ip
 
 timestep = 2.0*femtoseconds
 elongation_factor = 8.0
-n_steps = 500000
-n_intervals = 25
+n_steps = 5000000
+n_intervals = 100
 
 ##############################################################################
 
 pdb = PDBFile('../native.pdb')
 
-pdb.topology.loadBondDefinitions('residues-nle.xml')
+pdb.topology.loadBondDefinitions('../residues-nle.xml')
 pdb.topology.createStandardBonds()
 
-forcefield = ForceField('amber99sbildn.xml', 'amber99sbildn-nle.xml',
-                        'amber99-nle_obc.xml')
+forcefield = ForceField('../amber99sbildn.xml', '../amber99sbildn-nle.xml',
+                        '../amber99-nle_obc.xml')
 
 system = forcefield.createSystem(pdb.topology, nonbondedMethod=CutoffNonPeriodic, 
     constraints=None, rigidWater=True, nonbondedCutoff=1.0*nanometers)
@@ -58,17 +58,8 @@ simulation.step(100)
 
 
 # setup the reporters
-simulation.reporters.append(DCDReporter('pulling.dcd', 100))
-def distance(state):
-    positions = state.getPositions(asNumpy=True)
-    displacement = positions[pullingforce.atom1] - positions[pullingforce.atom2]
-    distance = sqrt(sum(displacement**2))
-    return distance.value_in_unit(nanometers)
-    
-reporter = WebReporter(100, observables=['temp', 'volume', 'distance'])
-reporter.register_observable('distance', distance)
-simulation.reporters.append(reporter)
-
+simulation.reporters.append(DCDReporter('pulling.dcd', 10000))
+simulation.reporters.append(StateDataReporter(stdout, 10000, temperature=True, step=True, time=True))    
 
 
 total_time = n_steps * timestep

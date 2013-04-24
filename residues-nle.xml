@@ -1,0 +1,23 @@
+<Residues>
+ <Residue name="NLE">
+  <Bond from="-C" to="N"/>
+  <Bond from="CA" to="C"/>
+  <Bond from="C" to="O"/>
+  <Bond from="N" to="H"/>
+  <Bond from="N" to="CA"/>
+  <Bond from="CA" to="HA"/>
+  <Bond from="CA" to="CB"/>
+  <Bond from="CB" to="HB1"/>
+  <Bond from="CB" to="HB2"/>
+  <Bond from="CB" to="CG"/>
+  <Bond from="CG" to="HG1"/>
+  <Bond from="CG" to="HG2"/>
+  <Bond from="CG" to="CD"/>
+  <Bond from="CD" to="HD1"/>
+  <Bond from="CD" to="HD2"/>
+  <Bond from="CD" to="CE"/>
+  <Bond from="CE" to="HE1"/>
+  <Bond from="CE" to="HE2"/>
+  <Bond from="CE" to="HE3"/>
+ </Residue>
+</Residues>

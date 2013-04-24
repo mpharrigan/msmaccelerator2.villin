@@ -1,0 +1,84 @@
+<ForceField>
+
+<AtomTypes>
+  <!-- Extra types for norleucine atoms -->
+  <Type name="1961" class="N" element="N" mass="14.00672"/>
+  <Type name="1962" class="H" element="H" mass="1.007947"/>
+  <Type name="1963" class="CT" element="C" mass="12.01078"/>
+  <Type name="1964" class="H1" element="H" mass="1.007947"/>
+  <Type name="1965" class="CT" element="C" mass="12.01078"/>
+  <Type name="1966" class="HC" element="H" mass="1.007947"/>
+  <Type name="1967" class="CT" element="C" mass="12.01078"/>
+  <Type name="1968" class="HC" element="H" mass="1.007947"/>
+  <Type name="1969" class="CT" element="C" mass="12.01078"/>
+  <Type name="1970" class="HC" element="H" mass="1.007947"/>
+  <Type name="1971" class="CT" element="C" mass="12.01078"/>
+  <Type name="1972" class="HC" element="H" mass="1.007947"/>
+  <Type name="1973" class="C" element="C" mass="12.01078"/>
+  <Type name="1974" class="O" element="O" mass="15.99943"/>
+</AtomTypes>
+
+<NonbondedForce coulomb14scale="0.833333" lj14scale="0.5">
+  <Atom type="1961" charge="-0.4157" sigma="0.325000" epsilon="0.71128"/>
+  <Atom type="1962" charge="0.27190" sigma="0.106908" epsilon="0.0656888"/>
+  <Atom type="1963" charge="0.01680" sigma="0.339967" epsilon="0.457730"/>
+  <Atom type="1964" charge="0.06210" sigma="0.259964" epsilon="0.0627600"/>
+  <Atom type="1965" charge="-0.02250" sigma="0.339967" epsilon="0.457730"/>
+  <Atom type="1966" charge="0.02790" sigma="0.264953" epsilon="0.0656888"/>
+  <Atom type="1967" charge="0.06600" sigma="0.339967" epsilon="0.457730"/>
+  <Atom type="1968" charge="0.03160" sigma="0.264953" epsilon="0.0656888"/>
+  <Atom type="1969" charge="-0.04080" sigma="0.339967" epsilon="0.457730"/>
+  <Atom type="1970" charge="-0.00370" sigma="0.264953" epsilon="0.0656888"/>
+  <Atom type="1971" charge="-0.00370" sigma="0.339967" epsilon="0.457730"/>
+  <Atom type="1972" charge="0.01380" sigma="0.264953" epsilon="0.0656888"/>
+  <Atom type="1973" charge="0.59730" sigma="0.339967" epsilon="0.359824"/>
+  <Atom type="1974" charge="-0.59790" sigma="0.295992" epsilon="0.878640"/>
+</NonbondedForce>
+
+<Residues>
+  <!-- Added parameters for norleucine --> 
+  <Residue name="NLE">
+    <Atom name="N" type="1961"/>
+    <Atom name="H" type="1962"/>
+    <Atom name="CA" type="1963"/>
+    <Atom name="HA" type="1964"/>
+    <Atom name="CB" type="1965"/>
+    <Atom name="HB1" type="1966"/>
+    <Atom name="HB2" type="1966"/>
+    <Atom name="CG" type="1967"/>
+    <Atom name="HG1" type="1968"/>
+    <Atom name="HG2" type="1968"/>
+    <Atom name="CD" type="1969"/>
+    <Atom name="HD1" type="1970"/>
+    <Atom name="HD2" type="1970"/>
+    <Atom name=" CE" type="1971"/>
+    <Atom name="HE1" type="1972"/>
+    <Atom name="HE2" type="1972"/>
+    <Atom name="HE3" type="1972"/>
+    <Atom name="C" type="1973"/>
+    <Atom name="O" type="1974"/>
+
+    <Bond from="0" to="1"/>
+    <Bond from="0" to="2"/>
+    <Bond from="2" to="3"/>
+    <Bond from="2" to="4"/>
+    <Bond from="2" to="17"/>
+    <Bond from="4" to="5"/>
+    <Bond from="4" to="6"/>
+    <Bond from="4" to="7"/>
+    <Bond from="7" to="8"/>
+    <Bond from="7" to="9"/>
+    <Bond from="7" to="10"/>
+    <Bond from="10" to="11"/>
+    <Bond from="10" to="12"/>
+    <Bond from="10" to="13"/>
+    <Bond from="13" to="14"/>
+    <Bond from="13" to="15"/>
+    <Bond from="13" to="16"/>
+    <Bond from="17" to="18"/>
+    <ExternalBond from="0"/>
+    <ExternalBond from="17"/>
+  </Residue>  
+</Residues>
+
+</ForceField>

@@ -31,7 +31,7 @@ pdb = PDBFile('../native.pdb')
 pdb.topology.loadBondDefinitions('../residues-nle.xml')
 pdb.topology.createStandardBonds()
 
-forcefield = ForceField('../amber99sbildn.xml', '../amber99sbildn-nle.xml',
+forcefield = ForceField('amber99sbildn.xml', '../amber99sbildn-nle.xml',
                         '../amber99-nle_obc.xml')
 
 system = forcefield.createSystem(pdb.topology, nonbondedMethod=CutoffNonPeriodic, 

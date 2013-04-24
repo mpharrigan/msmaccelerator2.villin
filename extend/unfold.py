@@ -43,9 +43,6 @@ system = forcefield.createSystem(pdb.topology, nonbondedMethod=CutoffNonPeriodic
 integrator = LangevinIntegrator(temperature, 91.0/picoseconds, timestep)
 integrator.setConstraintTolerance(0.0001)
 
-pullingforce = PullingForceWrapper(pdb=pdb)
-pullingforce.add_to_system(system)
-
 simulation = Simulation(pdb.topology, system, integrator)
 simulation.context.setPositions(pdb.positions)
 

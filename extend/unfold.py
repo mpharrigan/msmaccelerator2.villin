@@ -21,8 +21,11 @@ import IPython as ip
 
 timestep = 2.0*femtoseconds
 elongation_factor = 8.0
-n_steps = 5000000
-n_intervals = 100
+total_time = 10*nanoseconds
+n_steps = int(total_time / timestep)
+report_interval = int(10*picoseconds / timestep)
+
+temperature = 500*kelvin
 
 ##############################################################################
 
@@ -37,40 +40,24 @@ forcefield = ForceField('amber99sbildn.xml', '../amber99sbildn-nle.xml',
 system = forcefield.createSystem(pdb.topology, nonbondedMethod=CutoffNonPeriodic, 
     constraints=None, rigidWater=True, nonbondedCutoff=1.0*nanometers)
 
-integrator = LangevinIntegrator(300*kelvin, 91.0/picoseconds, timestep)
+integrator = LangevinIntegrator(temperature, 91.0/picoseconds, timestep)
 integrator.setConstraintTolerance(0.0001)
 
 pullingforce = PullingForceWrapper(pdb=pdb)
 pullingforce.add_to_system(system)
 
-platform = Platform.getPlatformByName('Reference')
-simulation = Simulation(pdb.topology, system, integrator, platform)
+simulation = Simulation(pdb.topology, system, integrator)
 simulation.context.setPositions(pdb.positions)
 
 
 print 'Minimizing...'
 simulation.minimizeEnergy()
 
-
-simulation.context.setVelocitiesToTemperature(300*kelvin)
-print 'Equilibrating...'
-simulation.step(100)
-
+simulation.context.setVelocitiesToTemperature(temperature)
 
 # setup the reporters
-simulation.reporters.append(DCDReporter('pulling.dcd', 10000))
-simulation.reporters.append(StateDataReporter(stdout, 10000, temperature=True, step=True, time=True))    
+simulation.reporters.append(DCDReporter('unfolding.dcd', report_interval))
+simulation.reporters.append(StateDataReporter(stdout, report_interval, temperature=True, step=True, time=True,
+                                              kineticEnergy=True, potentialEnergy=True))    
 
-
-total_time = n_steps * timestep
-print 'Going for', total_time.in_units_of(picoseconds)
-initial_r0 = pullingforce.get_r0()
-final_r0 = elongation_factor * pullingforce.get_r0()
-
-print 'PULLING RATE', ((final_r0 - initial_r0) / total_time).in_units_of(nanometer/nanosecond)
-
-
-for i, r0 in enumerate(np.linspace(initial_r0, final_r0, n_intervals)):
-    print 'moving the pulling points out'
-    pullingforce.set_r0(r0, simulation.context)
-    simulation.step(n_steps / n_intervals)
+simulation.step(n_steps)

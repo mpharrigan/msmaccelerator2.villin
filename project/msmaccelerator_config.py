@@ -92,7 +92,7 @@ c.Modeler.ergodic_trimming = False
 
 # Distance cutoff for clustering, in nanometers. We will continue to create new
 # clusters until each data point is within this cutoff from its cluster center.
-c.Modeler.rmsd_distance_cutoff = 0.1
+c.Modeler.rmsd_distance_cutoff = 0.3
 
 # ZeroMQ port to connect to the server on
 # c.Modeler.zmq_port = 12345

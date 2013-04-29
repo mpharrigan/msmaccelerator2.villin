@@ -312,7 +312,7 @@ c.BaseSampler.seed_structures = 'solvate.py.pdb'
 # of counts. At beta = 2, we choose microstates proportional to our estimate of
 # their current equilibrium propbability. The explicit formula used is: Prob(
 # choose state i ) ~ \sum_j C_{ij} ^{ beta - 1 }
-# c.CountsSampler.beta = 1
+c.CountsSampler.beta = 0
 
 # Trajectory file giving the initial structures that you want to sample from.
 # This should be a single PDB or other type of loadable trajectory file. These

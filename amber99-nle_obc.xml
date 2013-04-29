@@ -1940,19 +1940,19 @@
    <Atom type="1953" charge="0.4376" radius="0.105" scale="0.85"/>
 
    <!-- Parameters for NLE -->
-   <Atom type="1961" charge="-0.4157" radius="0.17063" scale="0.79"/>
-   <Atom type="1962" charge="0.27190" radius="0.115" scale="0.85"/>
-   <Atom type="1963" charge="0.01680" radius="0.190" scale="0.72"/>
-   <Atom type="1964" charge="0.06210" radius="0.125" scale="0.85"/>
-   <Atom type="1965" charge="-0.02250" radius="0.190" scale="0.72"/>
-   <Atom type="1966" charge="0.02790" radius="0.125" scale="0.85"/>
-   <Atom type="1967" charge="0.06600" radius="0.190" scale="0.72"/>
-   <Atom type="1968" charge="0.03160" radius="0.125" scale="0.85"/>
-   <Atom type="1969" charge="-0.04080" radius="0.190" scale="0.72"/>
-   <Atom type="1970" charge="-0.00370" radius="0.125" scale="0.85"/>
-   <Atom type="1971" charge="-0.00370" radius="0.190" scale="0.72"/>
-   <Atom type="1972" charge="0.01380" radius="0.125" scale="0.85"/>
-   <Atom type="1973" charge="0.59730" radius="0.1875" scale="0.72"/>
-   <Atom type="1974" charge="-0.59790" radius="0.148" scale="0.85"/>
+   <Atom type="nle-1961" charge="-0.4157" radius="0.17063" scale="0.79"/>
+   <Atom type="nle-1962" charge="0.27190" radius="0.115" scale="0.85"/>
+   <Atom type="nle-1963" charge="0.01680" radius="0.190" scale="0.72"/>
+   <Atom type="nle-1964" charge="0.06210" radius="0.125" scale="0.85"/>
+   <Atom type="nle-1965" charge="-0.02250" radius="0.190" scale="0.72"/>
+   <Atom type="nle-1966" charge="0.02790" radius="0.125" scale="0.85"/>
+   <Atom type="nle-1967" charge="0.06600" radius="0.190" scale="0.72"/>
+   <Atom type="nle-1968" charge="0.03160" radius="0.125" scale="0.85"/>
+   <Atom type="nle-1969" charge="-0.04080" radius="0.190" scale="0.72"/>
+   <Atom type="nle-1970" charge="-0.00370" radius="0.125" scale="0.85"/>
+   <Atom type="nle-1971" charge="-0.00370" radius="0.190" scale="0.72"/>
+   <Atom type="nle-1972" charge="0.01380" radius="0.125" scale="0.85"/>
+   <Atom type="nle-1973" charge="0.59730" radius="0.1875" scale="0.72"/>
+   <Atom type="nle-1974" charge="-0.59790" radius="0.148" scale="0.85"/>
  </GBSAOBCForce>
 </ForceField>

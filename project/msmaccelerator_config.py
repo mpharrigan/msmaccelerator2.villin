@@ -114,8 +114,11 @@ c.Simulator.integrator_xml = 'integrator.xml'
 # Set the log level by value or name.
 # c.Simulator.log_level = 30
 
+# Number of steps of dynamics to do
+c.Simulator.number_of_steps = int((10*nanoseconds) / (2.0*femtoseconds))
+
 # Interval at which to save positions to a disk, in units of steps
-c.Simulator.report_interval = int(100*picoseconds / (2.0*femtoseconds))
+c.Simulator.report_interval = int((100*picoseconds) / (2.0*femtoseconds))
 
 # Path to the XML file containing the OpenMM system to propagate
 c.Simulator.system_xml = 'system.xml'
@@ -134,9 +137,6 @@ c.Simulator.minimize = True
 
 # The OpenMM platform on which to run the simulation
 c.Simulator.platform = 'CUDA'
-
-# Number of steps of dynamics to do
-c.Simulator.number_of_steps = int(10*nanoseconds / (2.0*femtoseconds))
 
 # ZeroMQ port to connect to the server on
 # c.Simulator.zmq_port = 12345
@@ -189,12 +189,6 @@ c.Simulator.random_initial_velocities = True
 # above, that would be 'msmaccelerator
 # c.BaseServer.db_name = ''
 
-# The url for mongodb. This can be either passed in or, if not
-# supplied, it will be read from the environment variable
-# MONGO_URL. It should be a string like:
-#     mongodb://<user>:<pass>@hatch.mongohq.com:10034/msmaccelerator
-c.BaseServer.mongo_url = 'mongodb://rmcgibbo:passwd@dharma.mongohq.com:10028/msmaccelerator'
-
 # Set the log level by value or name.
 # c.BaseServer.log_level = 30
 
@@ -208,12 +202,6 @@ c.BaseServer.mongo_url = 'mongodb://rmcgibbo:passwd@dharma.mongohq.com:10028/msm
 # This is an application.
 
 # AdaptiveServer will inherit config from: BaseServer, App, Application
-
-# The url for mongodb. This can be either passed in or, if not
-# supplied, it will be read from the environment variable
-# MONGO_URL. It should be a string like:
-#     mongodb://<user>:<pass>@hatch.mongohq.com:10034/msmaccelerator
-c.AdaptiveServer.mongo_url = 'mongodb://rmcgibbo:passwd@dharma.mongohq.com:10028/msmaccelerator'
 
 # Set the log level by value or name.
 # c.AdaptiveServer.log_level = 30

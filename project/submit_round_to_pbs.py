@@ -5,7 +5,7 @@ from jinja2 import Environment
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-parser.add_argument('--name',    help='name of the job', type=int, required=True)
+parser.add_argument('--name',    help='name of the job', type=str, required=True)
 parser.add_argument('--n_gpus',  help='number of gpus', type=int, default=6)
 parser.add_argument('--repeats', help='number of  repeats', type=int, default=10)
 parser.add_argument('--dry_run', help='dont actually submit', type=bool, default=False)

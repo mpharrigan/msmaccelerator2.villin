@@ -30,37 +30,35 @@ app.Topology.loadBondDefinitions('../residues-nle.xml')
 PADDING = 1.0*unit.nanometers     # Minimum distance from protein to box edge.
 TOPOLOGY = '../native.pdb'        # File with the system topology.
 TRAJECTORY = '../extend/unfold.py.dcd'  # Trajectory of frames to be solvated.
-STRIDE = 4                        # Load up only every stride-th frame from TRAJECTORY
+STRIDE = 1                        # Load up only every stride-th frame from TRAJECTORY
 
 # ForceField to use for determining van der Waals radii and atomic charges
 # when adding solvent.
 FF = app.ForceField('amber99sbildn.xml', 'tip3p.xml', '../amber99sbildn-nle.xml')
 SITES_PER_WATER = 3
 
-OUT_TOPOLOGY = 'out.pdb'             # Solvated topology will be saved here.
-PREEQULIBRATED_DCD = 'preequil.dcd'  # The solvated systems, before running equilibration.
-EQULIBRATED_FN = 'out.dcd'           # The solvated systems, after running equilibration.
+OUT_TOPOLOGY = 'solvated.pdb'             # Solvated topology will be saved here.
+SOLVATED_DCD = 'solvated.dcd'  # The solvated systems, before running equilibration.
 
 assert not os.path.exists(OUT_TOPOLOGY), "%s already exists." % OUT_TOPOLOGY
-assert not os.path.exists(PREEQULIBRATED_DCD), "%s already exists." % PREEQULIBRATED_DCD
-assert not os.path.exists(EQULIBRATED_FN), "%s already exists." % EQULIBRATED_FN
+assert not os.path.exists(SOLVATED_DCD), "%s already exists." % SOLVATED_DCD
 
 #-----------------------------------------------------------------------------
 # MD settings for minimization / equilibration
 #-----------------------------------------------------------------------------
 
-N_STEPS_MINIMIZATION = 100
+# N_STEPS_MINIMIZATION = 100
 
-TIMESTEP = 2*unit.femtoseconds
-TEMPERATURE = 300*unit.kelvin
-N_STEPS_EQUILIBRATION = int(5 * unit.picoseconds / TIMESTEP)
+# TIMESTEP = 2*unit.femtoseconds
+# TEMPERATURE = 300*unit.kelvin
+# N_STEPS_EQUILIBRATION = int(5 * unit.picoseconds / TIMESTEP)
 
-def createSystem(topology):
-    system = FF.createSystem(topology, nonbonedMethod=app.PME,
-                             nonbondedCutoff=9*unit.angstroms,
-                             constraints=app.HBonds)
-    system.addForce(mm.MonteCarloBarostat(1*unit.atmosphere, TEMPERATURE))
-    return system
+# def createSystem(topology):
+#     system = FF.createSystem(topology, nonbonedMethod=app.PME,
+#                              nonbondedCutoff=9*unit.angstroms,
+#                              constraints=app.HBonds)
+#     system.addForce(mm.MonteCarloBarostat(1*unit.atmosphere, TEMPERATURE))
+#     return system
 
 #-----------------------------------------------------------------------------
 # Code
@@ -75,27 +73,29 @@ def main():
 
     top = app.PDBFile(TOPOLOGY).topology
 
-    boxes = np.empty((traj.n_frames, 3))
+    #boxes = np.empty((traj.n_frames, 3))
     n_atoms = np.empty(traj.n_frames)
 
-    print 'Solvating all of the frames with padding %s...' % PADDING
-    for i in progress(range(traj.n_frames)):
-        modeller = app.Modeller(top, traj.xyz[i].tolist())
-        modeller.addSolvent(FF, model='tip3p', boxSize=None, padding=PADDING)
+    #print 'Solvating all of the frames with padding %s...' % PADDING
+    #for i in progress(range(traj.n_frames)):
+    #    modeller = app.Modeller(top, traj.xyz[i].tolist())
+    #    modeller.addSolvent(FF, model='tip3p', boxSize=None, padding=PADDING)
 
-        boxes[i] = modeller.topology.getUnitCellDimensions().value_in_unit(unit.nanometers)
-        n_atoms[i] = md.utils.ilen(modeller.topology.atoms())
+    #    boxes[i] = modeller.topology.getUnitCellDimensions().value_in_unit(unit.nanometers)
+    #    n_atoms[i] = md.utils.ilen(modeller.topology.atoms())
 
     # Now, find the largest box, and solvate all of the frames to that box size.
-    print 'Initial number of atoms in each solvated box:'
-    print n_atoms
-    print 'Initial box volumes:'
-    print np.prod(boxes, axis=1)
+    #print 'Initial number of atoms in each solvated box:'
+    #print n_atoms
+    #print 'Initial box volumes:'
+    #print np.prod(boxes, axis=1)
 
-    largest_frame = np.argmax(n_atoms)
-    largest_box = unit.Quantity(boxes[largest_frame].tolist(), unit.nanometers)
-    print 'Largest box: %d' % largest_frame
-    print 'Dimensions:  %s' % largest_box
+    #largest_frame = np.argmax(np.prod(boxes, axis=1))
+    #largest_box = unit.Quantity(boxes[largest_frame].tolist(), unit.nanometers)
+    largest_box = unit.Quantity([8.067393779754639, 8.067393779754639, 8.067393779754639], unit.nanometers)
+    #print 'Largest box: %d' % largest_frame
+    #print 'Dimensions:  %s' % largest_box
+    #print 'N atoms   :  %d' % n_atoms[largest_frame]
 
     print '\nRe-solvating all frames into this box...'
     modellers = []
@@ -128,51 +128,12 @@ def main():
         positions = unit.Quantity(np.array(modellers[0].positions._value).tolist(), unit.nanometers)
         app.PDBFile.writeFile(modellers[0].topology, positions, f)
 
-    with open(PREEQULIBRATED_DCD, 'w') as f:
-        print 'Saving preequilibrated structures'
+    with open(SOLVATED_DCD, 'w') as f:
+        print 'Saving solvated structures'
         dcdfile = app.DCDFile(f, modellers[0].topology, TIMESTEP)
         for modeller in progress(modellers):
             assert all(a.name == b.name for a, b in zip(modeller.topology.atoms(), modellers[0].topology.atoms()))
             dcdfile.writeModel(modeller.positions, modeller.topology.getUnitCellDimensions())
-
-    equilibrate(modellers)
-
-def equilibrate(modellers):
-    print '\nSetting up equilibration...'
-    system = createSystem(modellers[0].topology)
-    integrator = mm.LangevinIntegrator(TEMPERATURE, 1.0/unit.picoseconds, TIMESTEP)
-    context = mm.Context(system, integrator)
-    platform = context.getPlatform()
-    print 'Selected Platform: %s' % platform.getName()
-    for key in platform.getPropertyNames():
-        print '%s = %s' % (key, platform.getPropertyValue(context, key))
-    print
-
-    with open(EQULIBRATED_FN, 'w') as f:
-        dcdfile = app.DCDFile(f, modellers[0].topology, TIMESTEP)
-
-        print 'Running minimization (%d steps) and equilibration (%d steps) for each model' % (N_STEPS_MINIMIZATION, N_STEPS_EQUILIBRATION)
-        for modeller in progress(modellers):
-            a, b, c = modeller.topology.getUnitCellDimensions().value_in_unit(unit.nanometers)
-            context.setPeriodicBoxVectors([a, 0, 0], [0, b, 0], [0, 0, c])
-            context.setPositions(modeller.positions)
-
-            print 'Minimizing...'
-            mm.LocalEnergyMinimizer.minimize(context, 1*unit.kilojoule/unit.mole, N_STEPS_MINIMIZATION)
-            context.setTime(0.0)
-            context.setVelocitiesToTemperature(TEMPERATURE)
-
-            print 'Equilibrating...'
-            integrator.step(N_STEPS_EQUILIBRATION)
-
-            state = context.getState(getPositions=True, enforcePeriodicBox=True)
-            a, b, c = state.getPeriodicBoxVectors()
-            dcdfile.writeModel(state.getPositions(),
-                mm.Vec3(a[0].value_in_unit(unit.nanometer),
-                        b[1].value_in_unit(unit.nanometer),
-                        c[2].value_in_unit(unit.nanometer)) * unit.nanometer)
-
-    print 'Done. Output is saved as DCD trajectory to %s' % EQULIBRATED_FN
 
 
 def rotate_to_pack(points):

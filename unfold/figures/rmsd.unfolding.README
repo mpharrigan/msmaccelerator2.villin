@@ -1,0 +1,8 @@
+Plot of the RMSD from the starting conformation (the native state) for
+the 35 alpha carbons, over the first ~35 nanoseconds of an unfolding
+trajectory at 500 K. Langevin dynamics. NPT (monte carlo barostat).
+The native state was solvated in a ~54A box with TIP3P water an NaCL to
+40 mM. The simulation was run with OpenMM 5.1 on a NVidia GTX 660 GPU. 
+
+The inset figure is an example unfolded structure, at 14ns elapsed simulation
+time.

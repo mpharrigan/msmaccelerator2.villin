@@ -1,0 +1,78 @@
+[RootApplication] Config file loaded.
+[OpenMMSimulator] Config file loaded.
+[OpenMMSimulator] Setting up simulation...
+[OpenMMSimulator] Opening state file: /home/harrigan/projects/msmaccelerator2.villin/project/starting_states/fd592c4c-d49b-4f74-871e-e13d5a0618b3..xml
+[OpenMMSimulator] minimizing...
+[OpenMMSimulator] adding reporters...
+[OpenMMSimulator] Starting dynamics
+[OpenMMSimulator] {'Time (ps)': 99.99999999994834, 'Step': 50000, 'Potential Energy (kJ/mole)': -181900.7839605473, 'Temperature (K)': 359.42586275772317, 'Progress (%s)': '1.0%'}
+[OpenMMSimulator] {'Time (ps)': 200.00000000022686, 'Step': 100000, 'Potential Energy (kJ/mole)': -181495.62098676304, 'Temperature (K)': 357.3339167341223, 'Progress (%s)': '2.0%'}
+[OpenMMSimulator] {'Time (ps)': 300.00000000070435, 'Step': 150000, 'Potential Energy (kJ/mole)': -181875.92247811332, 'Temperature (K)': 358.00596057450684, 'Progress (%s)': '3.0%'}
+[OpenMMSimulator] {'Time (ps)': 400.00000000118183, 'Step': 200000, 'Potential Energy (kJ/mole)': -182208.80248070695, 'Temperature (K)': 357.06355619211286, 'Progress (%s)': '4.0%'}
+[OpenMMSimulator] {'Time (ps)': 500.0000000016593, 'Step': 250000, 'Potential Energy (kJ/mole)': -181304.9542693589, 'Temperature (K)': 363.11441947670374, 'Progress (%s)': '5.0%'}
+[OpenMMSimulator] {'Time (ps)': 599.9999999996356, 'Step': 300000, 'Potential Energy (kJ/mole)': -181994.63846157305, 'Temperature (K)': 358.954695229956, 'Progress (%s)': '6.0%'}
+[OpenMMSimulator] {'Time (ps)': 699.999999997271, 'Step': 350000, 'Potential Energy (kJ/mole)': -181822.6801070273, 'Temperature (K)': 359.826932528832, 'Progress (%s)': '7.0%'}
+[OpenMMSimulator] {'Time (ps)': 799.9999999949063, 'Step': 400000, 'Potential Energy (kJ/mole)': -181665.66250005178, 'Temperature (K)': 359.5987864673806, 'Progress (%s)': '8.0%'}
+[OpenMMSimulator] {'Time (ps)': 899.9999999925416, 'Step': 450000, 'Potential Energy (kJ/mole)': -182053.22416838096, 'Temperature (K)': 364.42645314380667, 'Progress (%s)': '9.0%'}
+[OpenMMSimulator] {'Time (ps)': 999.9999999901769, 'Step': 500000, 'Potential Energy (kJ/mole)': -181616.55837542377, 'Temperature (K)': 357.8901808143731, 'Progress (%s)': '10.0%'}
+[OpenMMSimulator] {'Time (ps)': 1099.9999999878123, 'Step': 550000, 'Potential Energy (kJ/mole)': -181471.71261880547, 'Temperature (K)': 357.6000040148625, 'Progress (%s)': '11.0%'}
+[OpenMMSimulator] {'Time (ps)': 1199.9999999854476, 'Step': 600000, 'Potential Energy (kJ/mole)': -182249.24391320907, 'Temperature (K)': 361.6652676810054, 'Progress (%s)': '12.0%'}
+[OpenMMSimulator] {'Time (ps)': 1299.999999983083, 'Step': 650000, 'Potential Energy (kJ/mole)': -182202.490666389, 'Temperature (K)': 365.80057808996025, 'Progress (%s)': '13.0%'}
+[OpenMMSimulator] {'Time (ps)': 1399.9999999807183, 'Step': 700000, 'Potential Energy (kJ/mole)': -181921.15968305618, 'Temperature (K)': 363.3084338807535, 'Progress (%s)': '14.0%'}
+[OpenMMSimulator] {'Time (ps)': 1499.9999999783536, 'Step': 750000, 'Potential Energy (kJ/mole)': -182155.22035696916, 'Temperature (K)': 361.9124837629345, 'Progress (%s)': '15.0%'}
+[OpenMMSimulator] {'Time (ps)': 1599.9999999759889, 'Step': 800000, 'Potential Energy (kJ/mole)': -181710.62675268692, 'Temperature (K)': 357.44749348515984, 'Progress (%s)': '16.0%'}
+[OpenMMSimulator] {'Time (ps)': 1699.9999999736242, 'Step': 850000, 'Potential Energy (kJ/mole)': -181472.86457054364, 'Temperature (K)': 356.5728342279849, 'Progress (%s)': '17.0%'}
+[OpenMMSimulator] {'Time (ps)': 1799.9999999712595, 'Step': 900000, 'Potential Energy (kJ/mole)': -181681.12036216445, 'Temperature (K)': 357.77050950144286, 'Progress (%s)': '18.0%'}
+[OpenMMSimulator] {'Time (ps)': 1899.9999999688948, 'Step': 950000, 'Potential Energy (kJ/mole)': -182014.50203895196, 'Temperature (K)': 357.3443797583203, 'Progress (%s)': '19.0%'}
+[OpenMMSimulator] {'Time (ps)': 1999.9999999665301, 'Step': 1000000, 'Potential Energy (kJ/mole)': -181629.94740029238, 'Temperature (K)': 362.4846897786492, 'Progress (%s)': '20.0%'}
+[OpenMMSimulator] {'Time (ps)': 2099.9999999641655, 'Step': 1050000, 'Potential Energy (kJ/mole)': -182666.75421102392, 'Temperature (K)': 355.53645973937796, 'Progress (%s)': '21.0%'}
+[OpenMMSimulator] {'Time (ps)': 2199.9999999618008, 'Step': 1100000, 'Potential Energy (kJ/mole)': -181658.1410255432, 'Temperature (K)': 360.4928325255317, 'Progress (%s)': '22.0%'}
+[OpenMMSimulator] {'Time (ps)': 2299.999999959436, 'Step': 1150000, 'Potential Energy (kJ/mole)': -181905.6341010537, 'Temperature (K)': 362.9148692671252, 'Progress (%s)': '23.0%'}
+[OpenMMSimulator] {'Time (ps)': 2399.9999999570714, 'Step': 1200000, 'Potential Energy (kJ/mole)': -181550.70058816345, 'Temperature (K)': 361.73435709773014, 'Progress (%s)': '24.0%'}
+[OpenMMSimulator] {'Time (ps)': 2499.9999999547067, 'Step': 1250000, 'Potential Energy (kJ/mole)': -182549.84544770233, 'Temperature (K)': 359.1720621190538, 'Progress (%s)': '25.0%'}
+[OpenMMSimulator] {'Time (ps)': 2599.999999952342, 'Step': 1300000, 'Potential Energy (kJ/mole)': -181894.53876106162, 'Temperature (K)': 363.0838740982728, 'Progress (%s)': '26.0%'}
+[OpenMMSimulator] {'Time (ps)': 2699.9999999499773, 'Step': 1350000, 'Potential Energy (kJ/mole)': -181183.70032859256, 'Temperature (K)': 360.29102512987197, 'Progress (%s)': '27.0%'}
+[OpenMMSimulator] {'Time (ps)': 2799.9999999476127, 'Step': 1400000, 'Potential Energy (kJ/mole)': -182233.5543375276, 'Temperature (K)': 360.1961884335247, 'Progress (%s)': '28.0%'}
+[OpenMMSimulator] {'Time (ps)': 2899.999999945248, 'Step': 1450000, 'Potential Energy (kJ/mole)': -182529.09825272672, 'Temperature (K)': 355.32249182824995, 'Progress (%s)': '29.0%'}
+[OpenMMSimulator] {'Time (ps)': 2999.9999999428833, 'Step': 1500000, 'Potential Energy (kJ/mole)': -181905.296441325, 'Temperature (K)': 358.1917046413962, 'Progress (%s)': '30.0%'}
+[OpenMMSimulator] {'Time (ps)': 3099.9999999405186, 'Step': 1550000, 'Potential Energy (kJ/mole)': -182080.8304913384, 'Temperature (K)': 358.1531008138074, 'Progress (%s)': '31.0%'}
+[OpenMMSimulator] {'Time (ps)': 3199.999999938154, 'Step': 1600000, 'Potential Energy (kJ/mole)': -182607.7296426678, 'Temperature (K)': 359.497404733315, 'Progress (%s)': '32.0%'}
+[OpenMMSimulator] {'Time (ps)': 3299.999999935789, 'Step': 1650000, 'Potential Energy (kJ/mole)': -181870.18049326725, 'Temperature (K)': 359.22542124944215, 'Progress (%s)': '33.0%'}
+[OpenMMSimulator] {'Time (ps)': 3399.9999999334245, 'Step': 1700000, 'Potential Energy (kJ/mole)': -181261.3469122667, 'Temperature (K)': 361.8567779353503, 'Progress (%s)': '34.0%'}
+[OpenMMSimulator] {'Time (ps)': 3499.99999993106, 'Step': 1750000, 'Potential Energy (kJ/mole)': -182719.09806839004, 'Temperature (K)': 358.69272363196075, 'Progress (%s)': '35.0%'}
+[OpenMMSimulator] {'Time (ps)': 3599.999999928695, 'Step': 1800000, 'Potential Energy (kJ/mole)': -181564.98526921042, 'Temperature (K)': 363.9392612927345, 'Progress (%s)': '36.0%'}
+[OpenMMSimulator] {'Time (ps)': 3699.9999999263305, 'Step': 1850000, 'Potential Energy (kJ/mole)': -181531.6293836534, 'Temperature (K)': 359.92522569989103, 'Progress (%s)': '37.0%'}
+[OpenMMSimulator] {'Time (ps)': 3799.999999923966, 'Step': 1900000, 'Potential Energy (kJ/mole)': -182431.440007817, 'Temperature (K)': 358.53445468380164, 'Progress (%s)': '38.0%'}
+[OpenMMSimulator] {'Time (ps)': 3899.999999921601, 'Step': 1950000, 'Potential Energy (kJ/mole)': -181721.85963223688, 'Temperature (K)': 357.1429505222058, 'Progress (%s)': '39.0%'}
+[OpenMMSimulator] {'Time (ps)': 3999.9999999192364, 'Step': 2000000, 'Potential Energy (kJ/mole)': -181512.0959156733, 'Temperature (K)': 356.4990006295215, 'Progress (%s)': '40.0%'}
+[OpenMMSimulator] {'Time (ps)': 4099.999999917781, 'Step': 2050000, 'Potential Energy (kJ/mole)': -182042.19854399003, 'Temperature (K)': 361.4290128496133, 'Progress (%s)': '41.0%'}
+[OpenMMSimulator] {'Time (ps)': 4199.999999938153, 'Step': 2100000, 'Potential Energy (kJ/mole)': -182451.8115932308, 'Temperature (K)': 358.31052288721474, 'Progress (%s)': '42.0%'}
+[OpenMMSimulator] {'Time (ps)': 4299.999999958526, 'Step': 2150000, 'Potential Energy (kJ/mole)': -181812.31289108936, 'Temperature (K)': 359.37906350616856, 'Progress (%s)': '43.0%'}
+[OpenMMSimulator] {'Time (ps)': 4399.999999978899, 'Step': 2200000, 'Potential Energy (kJ/mole)': -182406.2130094245, 'Temperature (K)': 358.9678261425016, 'Progress (%s)': '44.0%'}
+[OpenMMSimulator] {'Time (ps)': 4499.9999999992715, 'Step': 2250000, 'Potential Energy (kJ/mole)': -182092.35595855303, 'Temperature (K)': 352.43966919555794, 'Progress (%s)': '45.0%'}
+[OpenMMSimulator] {'Time (ps)': 4600.000000019644, 'Step': 2300000, 'Potential Energy (kJ/mole)': -181757.51055356953, 'Temperature (K)': 361.6346342887225, 'Progress (%s)': '46.0%'}
+[OpenMMSimulator] {'Time (ps)': 4700.000000040017, 'Step': 2350000, 'Potential Energy (kJ/mole)': -183015.10191933997, 'Temperature (K)': 360.22306457693895, 'Progress (%s)': '47.0%'}
+[OpenMMSimulator] {'Time (ps)': 4800.0000000603895, 'Step': 2400000, 'Potential Energy (kJ/mole)': -182075.88808922842, 'Temperature (K)': 355.96130781029274, 'Progress (%s)': '48.0%'}
+[OpenMMSimulator] {'Time (ps)': 4900.000000080762, 'Step': 2450000, 'Potential Energy (kJ/mole)': -181927.12134509068, 'Temperature (K)': 357.72568334149247, 'Progress (%s)': '49.0%'}
+[OpenMMSimulator] {'Time (ps)': 5000.000000101135, 'Step': 2500000, 'Potential Energy (kJ/mole)': -181667.06984108058, 'Temperature (K)': 360.2942085067057, 'Progress (%s)': '50.0%'}
+[OpenMMSimulator] {'Time (ps)': 5100.000000121508, 'Step': 2550000, 'Potential Energy (kJ/mole)': -182047.93426130712, 'Temperature (K)': 360.72598585336425, 'Progress (%s)': '51.0%'}
+[OpenMMSimulator] {'Time (ps)': 5200.00000014188, 'Step': 2600000, 'Potential Energy (kJ/mole)': -180547.12400788628, 'Temperature (K)': 362.3072735487351, 'Progress (%s)': '52.0%'}
+[OpenMMSimulator] {'Time (ps)': 5300.000000162253, 'Step': 2650000, 'Potential Energy (kJ/mole)': -182602.9203514643, 'Temperature (K)': 358.00149288966713, 'Progress (%s)': '53.0%'}
+[OpenMMSimulator] {'Time (ps)': 5400.000000182626, 'Step': 2700000, 'Potential Energy (kJ/mole)': -181409.37474624556, 'Temperature (K)': 358.16829357180933, 'Progress (%s)': '54.0%'}
+[OpenMMSimulator] {'Time (ps)': 5500.000000202998, 'Step': 2750000, 'Potential Energy (kJ/mole)': -181421.62927883305, 'Temperature (K)': 358.7684043344694, 'Progress (%s)': '55.0%'}
+[OpenMMSimulator] {'Time (ps)': 5600.000000223371, 'Step': 2800000, 'Potential Energy (kJ/mole)': -181332.3658044003, 'Temperature (K)': 360.2325957611447, 'Progress (%s)': '56.0%'}
+[OpenMMSimulator] {'Time (ps)': 5700.000000243744, 'Step': 2850000, 'Potential Energy (kJ/mole)': -181932.36553087644, 'Temperature (K)': 359.91375599891194, 'Progress (%s)': '57.0%'}
+[OpenMMSimulator] {'Time (ps)': 5800.000000264116, 'Step': 2900000, 'Potential Energy (kJ/mole)': -181655.06102915574, 'Temperature (K)': 357.75295693244846, 'Progress (%s)': '58.0%'}
+[OpenMMSimulator] {'Time (ps)': 5900.000000284489, 'Step': 2950000, 'Potential Energy (kJ/mole)': -182614.52857743017, 'Temperature (K)': 354.5488912538688, 'Progress (%s)': '59.0%'}
+[OpenMMSimulator] {'Time (ps)': 6000.000000304862, 'Step': 3000000, 'Potential Energy (kJ/mole)': -181129.09507972933, 'Temperature (K)': 357.93835371126494, 'Progress (%s)': '60.0%'}
+[OpenMMSimulator] {'Time (ps)': 6100.000000325234, 'Step': 3050000, 'Potential Energy (kJ/mole)': -182355.00780975632, 'Temperature (K)': 359.8631467401433, 'Progress (%s)': '61.0%'}
+[OpenMMSimulator] {'Time (ps)': 6200.000000345607, 'Step': 3100000, 'Potential Energy (kJ/mole)': -182268.4925465883, 'Temperature (K)': 356.62773704995453, 'Progress (%s)': '62.0%'}
+[OpenMMSimulator] {'Time (ps)': 6300.00000036598, 'Step': 3150000, 'Potential Energy (kJ/mole)': -182478.28164298297, 'Temperature (K)': 357.8845056501423, 'Progress (%s)': '63.0%'}
+[OpenMMSimulator] {'Time (ps)': 6400.000000386352, 'Step': 3200000, 'Potential Energy (kJ/mole)': -182947.05135549651, 'Temperature (K)': 359.11083326485107, 'Progress (%s)': '64.0%'}
+[OpenMMSimulator] {'Time (ps)': 6500.000000406725, 'Step': 3250000, 'Potential Energy (kJ/mole)': -181268.13251853362, 'Temperature (K)': 365.34460223677894, 'Progress (%s)': '65.0%'}
+[OpenMMSimulator] {'Time (ps)': 6600.000000427098, 'Step': 3300000, 'Potential Energy (kJ/mole)': -182231.5008926317, 'Temperature (K)': 355.0226006025871, 'Progress (%s)': '66.0%'}
+[OpenMMSimulator] {'Time (ps)': 6700.0000004474705, 'Step': 3350000, 'Potential Energy (kJ/mole)': -181038.27681144886, 'Temperature (K)': 366.1640351107748, 'Progress (%s)': '67.0%'}
+[OpenMMSimulator] {'Time (ps)': 6800.000000467843, 'Step': 3400000, 'Potential Energy (kJ/mole)': -181782.14282282628, 'Temperature (K)': 362.1161612812013, 'Progress (%s)': '68.0%'}
+[OpenMMSimulator] {'Time (ps)': 6900.000000488216, 'Step': 3450000, 'Potential Energy (kJ/mole)': -181240.54751393758, 'Temperature (K)': 360.176760645451, 'Progress (%s)': '69.0%'}
+[OpenMMSimulator] {'Time (ps)': 7000.0000005085885, 'Step': 3500000, 'Potential Energy (kJ/mole)': -182535.28749845247, 'Temperature (K)': 358.83398533012934, 'Progress (%s)': '70.0%'}
+[OpenMMSimulator] {'Time (ps)': 7100.000000528961, 'Step': 3550000, 'Potential Energy (kJ/mole)': -181587.86482092738, 'Temperature (K)': 360.7725947247129, 'Progress (%s)': '71.0%'}

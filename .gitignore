@@ -1,0 +1,7 @@
+unfold/equilibrate/*.log
+unfold/equilibrate/*.dcd
+extend/*.dcd
+project/trajs/
+project/starting_states/
+project/models/
+

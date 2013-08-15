@@ -1,0 +1,20 @@
+[RootApplication] Config file loaded.
+[Modeler] Config file loaded.
+[Modeler] No response received from server onmsg_type=register_Modeler. Retrying...
+[Modeler] No response received from server onmsg_type=register_Modeler. Retrying...
+[Modeler] No response received from server onmsg_type=register_Modeler. Retrying...
+If you use this sofware in a publication, please cite our papers :)
+Traceback (most recent call last):
+  File "/home/harrigan/opt/epd/User/bin/accelerator", line 7, in <module>
+    execfile(__file__)
+  File "/home/harrigan/projects/msmaccelerator2/accelerator", line 23, in <module>
+    main()
+  File "/home/harrigan/projects/msmaccelerator2/accelerator", line 20, in main
+    app.start()
+  File "/home/harrigan/projects/msmaccelerator2/msmaccelerator/core/app.py", line 132, in start
+    return self.subapp.start()
+  File "/home/harrigan/projects/msmaccelerator2/msmaccelerator/core/device.py", line 78, in start
+    msg = self.send_recv(msg_type='register_%s' % self.__class__.__name__)
+  File "/home/harrigan/projects/msmaccelerator2/msmaccelerator/core/device.py", line 153, in send_recv
+    raise IOError('Network timeout. Server is unresponsive.')
+IOError: Network timeout. Server is unresponsive.

@@ -9,7 +9,7 @@ template = """#!/bin/bash
 #MSUB -N msmaccelerator-{{name}}
 #MSUB -l nodes=1:ppn={{n_gpus}}:gpus={{n_gpus}}
 #MSUB -l walltime={{time}}
-#MSUB -q longq
+#MSUB -q {{queue}}
 #MSUB -d /home/harrigan/projects/msmaccelerator2.villin/project/
 
 cd /home/harrigan/projects/msmaccelerator2.villin/project/
@@ -27,6 +27,13 @@ do
   accelerator model >>logs/msmaccelerator-{{ name }}-$i.out 2>&1
 done
 """
+
+queues = {
+          'shortq': '13:00:00',
+          'standard': '23:00:00',
+          'rlongq': '440:00:00',
+          'longq': '240:00:00'
+          }
 
 def submit_round_to_pbs(args):
     env = Environment()
@@ -51,8 +58,8 @@ if __name__ == "__main__":
     parser.add_argument('--n_gpus', help='number of gpus', type=int, default=6)
     parser.add_argument('--repeats', help='number of  repeats', type=int, default=10)
     parser.add_argument('--dry_run', help='dont actually submit', type=bool, default=False)
-    parser.add_argument('--time', help='time', type=str, default='239:59:59')
     parser.add_argument('--dir', help='Directory to store the job file', default='jobs')
+    parser.add_argument('--queue', help='The queue to submit to', default='longq')
 
     args = parser.parse_args()
 
@@ -60,5 +67,9 @@ if __name__ == "__main__":
         parser.exit('n_gpus must be positive')
     if args.repeats <= 0:
         parser.exit('repeats must be positive')
+    if args.queue not in queues.keys():
+        parser.exit('please supply a valid queue')
+
+    args.time = queues[args.queue]
 
     submit_round_to_pbs(args)

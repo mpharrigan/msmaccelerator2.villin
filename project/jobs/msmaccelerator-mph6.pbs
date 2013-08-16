@@ -1,15 +1,15 @@
 #!/bin/bash
 #MSUB -N msmaccelerator-mph6
 #MSUB -l nodes=1:ppn=6:gpus=6
-#MSUB -l walltime=239:59:59
-#MSUB -q longq
+#MSUB -l walltime=23:00:00
+#MSUB -q standard
 #MSUB -d /home/harrigan/projects/msmaccelerator2.villin/project/
 
 cd /home/harrigan/projects/msmaccelerator2.villin/project/
 mkdir -p logs
 nvidia-smi &>logs/msmaccelerator-mph6.out
 
-for i in `seq 1 15`
+for i in `seq 1 10`
 do
   
   accelerator OpenMM --device_index=0 &>logs/msmaccelerator-mph6-$i-0.out &

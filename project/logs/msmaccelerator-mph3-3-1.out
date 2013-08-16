@@ -99,3 +99,9 @@
 [OpenMMSimulator] {'Time (ps)': 9200.000000956787, 'Step': 4600000, 'Potential Energy (kJ/mole)': -182766.66253442038, 'Temperature (K)': 361.6495398675997, 'Progress (%s)': '92.0%'}
 [OpenMMSimulator] {'Time (ps)': 9300.00000097716, 'Step': 4650000, 'Potential Energy (kJ/mole)': -180809.48597330227, 'Temperature (K)': 362.39031766513966, 'Progress (%s)': '93.0%'}
 [OpenMMSimulator] {'Time (ps)': 9400.000000997532, 'Step': 4700000, 'Potential Energy (kJ/mole)': -181949.10150831752, 'Temperature (K)': 357.5847189090542, 'Progress (%s)': '94.0%'}
+[OpenMMSimulator] {'Time (ps)': 9500.000001017905, 'Step': 4750000, 'Potential Energy (kJ/mole)': -182042.76992036588, 'Temperature (K)': 357.01436873706245, 'Progress (%s)': '95.0%'}
+[OpenMMSimulator] {'Time (ps)': 9600.000001038277, 'Step': 4800000, 'Potential Energy (kJ/mole)': -181550.01926652482, 'Temperature (K)': 362.984254714041, 'Progress (%s)': '96.0%'}
+[OpenMMSimulator] {'Time (ps)': 9700.00000105865, 'Step': 4850000, 'Potential Energy (kJ/mole)': -182248.60644076578, 'Temperature (K)': 359.0188310108168, 'Progress (%s)': '97.0%'}
+[OpenMMSimulator] {'Time (ps)': 9800.000001079023, 'Step': 4900000, 'Potential Energy (kJ/mole)': -182074.1138153877, 'Temperature (K)': 354.86264398488134, 'Progress (%s)': '98.0%'}
+[OpenMMSimulator] {'Time (ps)': 9900.000001099395, 'Step': 4950000, 'Potential Energy (kJ/mole)': -181701.6568138888, 'Temperature (K)': 356.1142561589893, 'Progress (%s)': '99.0%'}
+If you use this sofware in a publication, please cite our papers :)

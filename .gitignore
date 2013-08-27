@@ -1,7 +1,12 @@
+
 unfold/equilibrate/*.log
 unfold/equilibrate/*.dcd
 extend/*.dcd
-project/trajs/
-project/starting_states/
-project/models/
-
+project*/trajs/
+project*/starting_states/
+project*/models/
+project*/logs/
+*.e????
+*.o????
+*.e???
+*.o???

@@ -1,0 +1,60 @@
+#!/bin/bash
+#MSUB -N msma-2-test
+#MSUB -l nodes=2:ppn=12:gpus=7
+#MSUB -l walltime=240:00:00
+#MSUB -q longq
+#MSUB -d /home/harrigan/projects/msmaccelerator2.villin/project/
+
+cd /home/harrigan/projects/msmaccelerator2.villin/project2/
+mkdir -p logs
+nvidia-smi &>logs/msmaccelerator-2-test.out
+
+for i in `seq 1 10`
+do
+  
+  accelerator OpenMM --device_index=0 &>logs/msmaccelerator-2-test-$i-0.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=1 &>logs/msmaccelerator-2-test-$i-1.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=2 &>logs/msmaccelerator-2-test-$i-2.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=3 &>logs/msmaccelerator-2-test-$i-3.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=4 &>logs/msmaccelerator-2-test-$i-4.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=5 &>logs/msmaccelerator-2-test-$i-5.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=6 &>logs/msmaccelerator-2-test-$i-6.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=7 &>logs/msmaccelerator-2-test-$i-7.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=8 &>logs/msmaccelerator-2-test-$i-8.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=9 &>logs/msmaccelerator-2-test-$i-9.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=10 &>logs/msmaccelerator-2-test-$i-10.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=11 &>logs/msmaccelerator-2-test-$i-11.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=12 &>logs/msmaccelerator-2-test-$i-12.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=13 &>logs/msmaccelerator-2-test-$i-13.out &
+  sleep 10
+  
+
+  wait
+  accelerator model >>logs/msmaccelerator-2-test-$i.out 2>&1
+done

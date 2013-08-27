@@ -1,0 +1,36 @@
+#!/bin/bash
+#MSUB -N msmaccelerator-mph16
+#MSUB -l nodes=1:ppn=6:gpus=6
+#MSUB -l walltime=240:00:00
+#MSUB -q longq
+#MSUB -d /home/harrigan/projects/msmaccelerator2.villin/project/
+
+cd /home/harrigan/projects/msmaccelerator2.villin/project/
+mkdir -p logs
+nvidia-smi &>logs/msmaccelerator-mph16.out
+
+for i in `seq 1 8`
+do
+  
+  accelerator OpenMM --device_index=0 &>logs/msmaccelerator-mph16-$i-0.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=1 &>logs/msmaccelerator-mph16-$i-1.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=2 &>logs/msmaccelerator-mph16-$i-2.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=3 &>logs/msmaccelerator-mph16-$i-3.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=4 &>logs/msmaccelerator-mph16-$i-4.out &
+  sleep 10
+  
+  accelerator OpenMM --device_index=5 &>logs/msmaccelerator-mph16-$i-5.out &
+  sleep 10
+  
+
+  wait
+  accelerator model >>logs/msmaccelerator-mph16-$i.out 2>&1
+done

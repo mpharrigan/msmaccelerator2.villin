@@ -1,0 +1,89 @@
+[RootApplication] Config file loaded.
+[AdaptiveServer] Config file loaded.
+[AdaptiveServer] Sampler loaded
+[AdaptiveServer] Using seed structures. No existing model found on disk.
+[AdaptiveServer] IOLoop starting
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': 'aac9d334-9c60-4d4d-91c0-a5d290962b0a', 'sender_id': '6535eea4-2dfa-42a2-bbfa-489cde6670fe', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641098.441119}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 239
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/6535eea4-2dfa-42a2-bbfa-489cde6670fe..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/6535eea4-2dfa-42a2-bbfa-489cde6670fe.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': 'd8112a49-8205-40fb-9b96-9aed734adf2c', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641103.199079}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '9c0df28c-8a18-47d1-a299-2cb55111de49', 'sender_id': '8c166277-7667-4f07-851c-f2da374f124d', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641108.135907}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 231
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/8c166277-7667-4f07-851c-f2da374f124d..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/8c166277-7667-4f07-851c-f2da374f124d.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': 'b1f3d5f5-826c-4440-9704-a34514e4cc34', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641112.982161}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': 'e5ed48f3-7579-4769-a0e5-96f2b62311ad', 'sender_id': '55c86c44-6911-4ec0-9dbe-eba1002881f8', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641118.171019}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 167
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/55c86c44-6911-4ec0-9dbe-eba1002881f8..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/55c86c44-6911-4ec0-9dbe-eba1002881f8.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '3b7897de-705e-4cbd-810e-1cf00518ff2d', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641123.051593}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '81559343-d08d-423a-a0c2-541040258ce2', 'sender_id': '66652bec-0c67-486b-ba5d-e4c49541d59c', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641128.229347}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 29
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/66652bec-0c67-486b-ba5d-e4c49541d59c..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/66652bec-0c67-486b-ba5d-e4c49541d59c.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '4ef1fc92-828e-4cbc-ab4a-77b56a9bd110', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641133.049564}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '08ff0ff5-b7c5-4b98-949e-8431c3ace135', 'sender_id': '236e5d35-3d4d-44fb-bddb-28517d5d610b', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641138.338885}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 157
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/236e5d35-3d4d-44fb-bddb-28517d5d610b..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/236e5d35-3d4d-44fb-bddb-28517d5d610b.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '0a0b83e6-e118-48f2-aade-fb227aae6823', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641143.232058}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '5ed9fd4a-8b5a-46e3-b530-2b03583750b2', 'sender_id': 'e4fbc8be-e636-4c55-9059-15e456e1dee5', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641148.392089}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 140
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/e4fbc8be-e636-4c55-9059-15e456e1dee5..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/e4fbc8be-e636-4c55-9059-15e456e1dee5.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '0f3bcede-09e9-4ae6-91b2-f72183180c0d', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641153.214069}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '571d284a-fe03-46a4-93ab-b47d9a406a01', 'sender_id': '225af834-bc2f-4ed3-9546-4c59eecab5c0', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641158.370727}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 108
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/225af834-bc2f-4ed3-9546-4c59eecab5c0..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/225af834-bc2f-4ed3-9546-4c59eecab5c0.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': 'e9052fcc-4ced-47c9-9559-ad085445957a', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641163.393486}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': 'e00c0fda-1c79-47a2-bfc1-66a29343c3fd', 'sender_id': '8feb7271-38f2-4c4c-a484-ce342f9c113c', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641168.986096}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 210
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/8feb7271-38f2-4c4c-a484-ce342f9c113c..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/8feb7271-38f2-4c4c-a484-ce342f9c113c.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '6a281aaf-cff6-42e1-9e87-bff575239a1b', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641174.039317}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': 'e99c2a82-5aff-4c99-a7a3-ad54e4f33e6f', 'sender_id': '217d233b-426e-42f0-aafb-e49bdd6ff6d7', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641178.889145}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 226
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/217d233b-426e-42f0-aafb-e49bdd6ff6d7..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/217d233b-426e-42f0-aafb-e49bdd6ff6d7.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '43c7da5d-3a08-4534-a307-eaa94d5e8c93', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641183.85437}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '3d978662-7da5-4414-9ed7-f14cd005d92d', 'sender_id': '0d53f4e1-eb37-4874-a209-8f6582cff34c', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641188.706994}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 93
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/0d53f4e1-eb37-4874-a209-8f6582cff34c..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/0d53f4e1-eb37-4874-a209-8f6582cff34c.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': 'cd576669-0f72-4507-8122-9fcef3fad72f', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641193.78495}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '6cb714ee-85ba-4a6b-a271-d8e0900a9e97', 'sender_id': 'd03d6d62-010c-4241-a20b-c2084ec8ac1f', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641198.682314}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 164
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/d03d6d62-010c-4241-a20b-c2084ec8ac1f..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/d03d6d62-010c-4241-a20b-c2084ec8ac1f.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '8435868e-62b0-45db-b244-387cb21fd31d', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641203.661478}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '836ccbb4-26a5-496d-b5c6-cef26448962b', 'sender_id': '60560a25-98d1-4048-b614-6c9785a6d128', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641208.75693}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 213
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/60560a25-98d1-4048-b614-6c9785a6d128..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/60560a25-98d1-4048-b614-6c9785a6d128.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '49dfa1b2-3160-49c8-a112-c7073c73129b', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641213.697254}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': 'df016a4d-8f41-44fb-a57b-fa4d9daccd04', 'sender_id': '8997ae6d-92e4-4f68-a4bd-982c0ffd7c88', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641218.781276}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 160
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/8997ae6d-92e4-4f68-a4bd-982c0ffd7c88..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/8997ae6d-92e4-4f68-a4bd-982c0ffd7c88.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '305b3380-0c79-4d86-80d2-8688b6b5f128', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641223.809226}}
+[AdaptiveServer] RECEIVING MESSAGE: {'content': {},
+ 'header': {'msg_id': '17107e7e-f2b8-4b82-b806-24a3c1ebd205', 'sender_id': '3d334409-326d-4109-927b-18f50ddc19f1', 'msg_type': 'register_OpenMMSimulator', 'time': 1377641229.263885}}
+[AdaptiveServer] NVT.h5
+[AdaptiveServer] CentroidSampler is falling back to BaseSampler to get a structure, because no model or weights are registered.
+[AdaptiveServer] Sampling from the seed structures, frame 148
+[AdaptiveServer] SENDING MESSAGE: {'content': {'starting_state': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/starting_states/3d334409-326d-4109-927b-18f50ddc19f1..xml', 'protocol': 'localfs'}, 'output': {'path': '/home/harrigan/projects/msmaccelerator2.villin/project2/trajs/3d334409-326d-4109-927b-18f50ddc19f1.h5', 'protocol': 'localfs'}, 'topology_pdb': {'path': 'NVT.pdb', 'protocol': 'localfs'}}, 'header': {'msg_id': '87508679-0cae-4fe1-bbe9-21d98887ca33', 'sender_id': '39362369-a1ce-4e84-a508-00aa59b78cf5', 'msg_type': 'simulate', 'time': 1377641234.234646}}
